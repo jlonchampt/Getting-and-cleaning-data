@@ -23,11 +23,11 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 You should create one R script called run_analysis.R that does the following. 
 
-1.	Merges the training and the test sets to create one data set.
-2.	Extracts only the measurements on the mean and standard deviation for each measurement. 
-3.	Uses descriptive activity names to name the activities in the data set
-4.	Appropriately labels the data set with descriptive variable names. 
-5.	From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+1. Merges the training and the test sets to create one data set.
+2. Extracts only the measurements on the mean and standard deviation for each measurement. 
+3. Uses descriptive activity names to name the activities in the data set
+4. Appropriately labels the data set with descriptive variable names. 
+5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 
 ##run_analysis.R Script
@@ -52,7 +52,7 @@ The script performs the following :
 
 5. The activity names of the 'y_all' data frame are named, based on the id/name association provided in the 'act_labels' data frame. The name 'activity' is given to the activity column. 
 
-6. The variable names of the 'x_all' data frame are cleaned : short names replaced by explicit full names, small letters, '()'  deleted. It is done by using the gsub() function.
+6. The variable names of the 'x_all' data frame are cleaned : adding of underscore characters to make the names more readable and '()'  deleted. It is done by using the gsub() function.
 
 7. The name 'subject' is given to the subject column of the 'subj_all' data frame. 
 
@@ -67,5 +67,6 @@ The R code contains str() functions for easier preview of the 'tidy_df' and 'tid
 ##Tidy data
 
 The tidy data is available in the tidy_mean.txt file. The structure of this file is detailed in the Codebook file. 
+The tidy dat set is composed of 180 observations of 68 variables. 
 
 
