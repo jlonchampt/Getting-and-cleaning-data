@@ -4,7 +4,7 @@ This CodeBook describes the variables of the tidy data set.
 The tidy data set is composed of 180 observations of 68 variables. 
 The data set is stored in the "tidy_mean.txt" file.
 
-The list of variables is as follows :
+The list of variables is as follows :  
 
 - subject : Subject ID
 - activity : Performed activity
@@ -74,3 +74,5 @@ The list of variables is as follows :
 - f_BodyBodyGyroMag_std : Standard deviation of frequency of magnitude of body gyroscope measurement
 - f_BodyBodyGyroJerkMag_mean : Mean frequency of magnitude of body gyroscope jerk measurement
 - f_BodyBodyGyroJerkMag_std  :  Standard deviation frequency of magnitude of body gyroscope jerk measurement
+
+The time variables are expressed in seconds, the frequency variables are expressed in Hertz.
