@@ -35,24 +35,33 @@ run_analysis.R Script
 
 The script performs the following :
 
-⦁	It downloads the UCI HAR Dataset data set zip file and unzip it in my local UCI HAR Dataset folder.
-⦁	It loads the test and training .txt files into data frames. The .txt files and associated data frames are the following: 
+1.	It downloads the UCI HAR Dataset data set zip file and unzip it in my local UCI HAR Dataset folder.
+
+2.	It loads the test and training .txt files into data frames. The .txt files and associated data frames are the following: 
 		- 'activity_labels.txt' / 'act_labels'
 		- 'train/X_train.txt' / 'x_train'
 		- 'train/y_train.txt' / 'y_train'
 		- 'test/X_test.txt' / 'x_test'
 		- 'test/y_test.txt' / 'y_test'
-⦁	The train and test data frames are merged into a single data frame. This is done using the rbind() function. The resulting data frames are the following :
+		
+3.	The train and test data frames are merged into a single data frame. This is done using the rbind() function. The resulting data frames are the following :
 		- 'x_all'
 		- 'y_all'
 		- 'subj_all'
-⦁	It selects the mean and standard deviation variables from the  'x_all' data set. This is done using the select function of the dplyr package. The resulting data frame is named 'x_meanstd'
-⦁	The activity names of the 'y_all' data frame are named, based on the id/name association provided in the 'act_labels' data frame. The name 'activity' is given to the activity column. 
-⦁	The variable names of the 'x_all' data frame are cleaned : short names replaced by explicit full names, small letters, '()'  deleted. It is done by using the gsub() function.
-⦁	The name 'subject' is given to the subject column of the 'subj_all' data frame. 
-⦁	The 'x_all', 'y_all' and 'subj_all' data frames are merged in a single tidy data frame that is named 'tidy_df'.
-⦁	The melt() function is used to set the activity and subject columns of the 'tidy_df' as identifiers. The other columns are defined as measured variables.  
-⦁	The dcast() function is used to determine  the mean of each variable for each activity and each subject. The results are provided in the 'tidy_mean' data frame. They are also exported into the 'tidy_mean.txt' file.  
+	
+4. 	It selects the mean and standard deviation variables from the  'x_all' data set. This is done using the select function of the dplyr package. The resulting data frame is named 'x_meanstd'
+
+5.	The activity names of the 'y_all' data frame are named, based on the id/name association provided in the 'act_labels' data frame. The name 'activity' is given to the activity column. 
+
+6.	The variable names of the 'x_all' data frame are cleaned : short names replaced by explicit full names, small letters, '()'  deleted. It is done by using the gsub() function.
+
+7.	The name 'subject' is given to the subject column of the 'subj_all' data frame. 
+
+8.	The 'x_all', 'y_all' and 'subj_all' data frames are merged in a single tidy data frame that is named 'tidy_df'.
+
+9.	The melt() function is used to set the activity and subject columns of the 'tidy_df' as identifiers. The other columns are defined as measured variables.  
+
+10.	The dcast() function is used to determine  the mean of each variable for each activity and each subject. The results are provided in the 'tidy_mean' data frame. They are also exported into the 'tidy_mean.txt' file.  
 
     
 The R code contains str() functions for easier preview of the 'tidy_df' and 'tidy_mean' data frames.
