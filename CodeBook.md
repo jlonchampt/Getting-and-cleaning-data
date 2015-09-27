@@ -74,5 +74,3 @@ The list of variables is as follows :
 - f_BodyBodyGyroMag_std : Standard deviation of frequency of magnitude of body gyroscope measurement
 - f_BodyBodyGyroJerkMag_mean : Mean frequency of magnitude of body gyroscope jerk measurement
 - f_BodyBodyGyroJerkMag_std  :  Standard deviation frequency of magnitude of body gyroscope jerk measurement
-
-The time variables are expressed in seconds, the frequency variables are expressed in Hertz.
