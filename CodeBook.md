@@ -8,71 +8,71 @@ Using its embedded accelerometer and gyroscope, we captured 3-axial linear accel
 
 The list of variables is as follows :
 
-"subject" : Subject ID
-"activity" : Performed activity
-- "time_bodyaccelerometer_mean_x" : Mean time for acceleration of body for X direction
-- "time_bodyaccelerometer_mean_y" : Mean time for acceleration of body for Y direction
-- "time_bodyaccelerometer_mean_z" : Mean time for acceleration of body for Z direction
-- "time_bodyaccelerometer_std_x" : Standard deviation of time for acceleration of body for X direction
-- "time_bodyaccelerometer_std_y" : Standard deviation of time for acceleration of body for Y direction
-- "time_bodyaccelerometer_std_z" : Standard deviation of time for acceleration of body for Z direction
-- "time_gravityaccelerometer_mean_x" : Mean time of acceleration of gravity for X direction
-- "time_gravityaccelerometer_mean_y" : Mean time of acceleration of gravity for Y direction
-- "time_gravityaccelerometer_mean_z" : Mean time of acceleration of gravity for Z direction
-- "time_gravityaccelerometer_std_x"  : Standard deviation of time of acceleration of gravity for X direction
-- "time_gravityaccelerometer_std_y" : Standard deviation of time of acceleration of gravity for Y direction
-- "time_gravityaccelerometer_std_z" : Standard deviation of time of acceleration of gravity for Z direction
-- "time_bodyaccelerometerjerk_mean_x" : Mean time of body acceleration jerk for X direction
-- "time_bodyaccelerometerjerk_mean_y" : Mean time of body acceleration jerk for Y direction
-- "time_bodyaccelerometerjerk_mean_z" : Mean time of body acceleration jerk for Z direction
-- "time_bodyaccelerometerjerk_std_x" : Standard deviation of time of body acceleration jerk for X direction
-- "time_bodyaccelerometerjerk_std_y" : Standard deviation of time of body acceleration jerk for Y direction
-- "time_bodyaccelerometerjerk_std_z" : Standard deviation of time of body acceleration jerk for Z direction
-- "time_bodygyroscope_mean_x"  : Mean body gyroscope measurement for X direction
-- "time_bodygyroscope_mean_y" : Mean body gyroscope measurement for Y direction
-- "time_bodygyroscope_mean_z" : Mean body gyroscope measurement for Z direction
-- "time_bodygyroscope_std_x" : Standard deviation of body gyroscope measurement for X direction
-- "time_bodygyroscope_std_y" : Standard deviation of body gyroscope measurement for Y direction
-- "time_bodygyroscope_std_z" : Standard deviation of body gyroscope measurement for Z direction
-- "time_bodygyroscopejerk_mean_x" : Mean jerk signal of body for X direction
-- "time_bodygyroscopejerk_mean_y" : Mean jerk signal of body for Y direction
-- "time_bodygyroscopejerk_mean_z" : Mean jerk signal of body for Z direction
-- "time_bodygyroscopejerk_std_x" : Standard deviation of jerk signal of body for X direction
-- "time_bodygyroscopejerk_std_y" : Standard deviation of jerk signal of body for Y direction
-- "time_bodygyroscopejerk_std_z" : Standard deviation of jerk signal of body for Z direction
-- "time_bodyaccelerometermagnitude_mean" : Mean magnitude of body acceleration
-- "time_bodyaccelerometermagnitude_std" : Standard deviation of magnitude of body acceleration
-- "time_gravityaccelerometermagnitude_mean" : Mean gravity acceleration magnitude
-- "time_gravityaccelerometermagnitude_std" : Standard deviation of gravity acceleration magnitude
-- "time_bodyaccelerometerjerkmagnitude_mean" : Mean magnitude of body acceleration jerk
-- "time_bodyaccelerometerjerkmagnitude_std" : Standard deviation of magnitude of body acceleration jerk
-- "time_bodygyroscopemagnitude_mean" : Mean magnitude of body gyroscope measurement
-- "time_bodygyroscopemagnitude_std" : Standard deviation of magnitude of body gyroscope measurement
-- "time_bodygyroscopejerkmagnitude_mean" : Mean magnitude of body body gyroscope jerk measurement
-- "time_bodygyroscopejerkmagnitude_std" : Standard deviation of magnitude of body body gyroscope jerk measurement
-- "frequency_bodyaccelerometer_mean_x" : Mean frequency of body acceleration for X direction
-- "frequency_bodyaccelerometer_mean_y" : Mean frequency of body acceleration for Y direction
-- "frequency_bodyaccelerometer_mean_z" : Mean frequency of body acceleration for Z direction
-- "frequency_bodyaccelerometer_std_x" : Standard deviation of frequency of body acceleration for X direction
-- "frequency_bodyaccelerometer_std_y" : Standard deviation of frequency of body acceleration for Y direction
-- "frequency_bodyaccelerometer_std_z" : Standard deviation of frequency of body acceleration for Z direction
-- "frequency_bodyaccelerometerjerk_mean_x" : Mean frequency of body accelerationerlation jerk for X direction
-- "frequency_bodyaccelerometerjerk_mean_y" : Mean frequency of body accelerationerlation jerk for Y direction
-- "frequency_bodyaccelerometerjerk_mean_z" : Mean frequency of body accelerationerlation jerk for Z direction
-- "frequency_bodyaccelerometerjerk_std_x" : Standard deviation frequency of body accelerationerlation jerk for X direction
-- "frequency_bodyaccelerometerjerk_std_y" : Standard deviation frequency of body accelerationerlation jerk for Y direction
-- "frequency_bodyaccelerometerjerk_std_z" : Standard deviation frequency of body accelerationerlation jerk for Z direction
-- "frequency_bodygyroscope_mean_x" : Mean frequency of body gyroscope measurement for X direction
-- "frequency_bodygyroscope_mean_y" : Mean frequency of body gyroscope measurement for Y direction
-- "frequency_bodygyroscope_mean_z" : Mean frequency of body gyroscope measurement for Z direction
-- "frequency_bodygyroscope_std_x" : Standard deviation frequency of body gyroscope measurement for X direction
-- "frequency_bodygyroscope_std_y" : Standard deviation frequency of body gyroscope measurement for Y direction
-- "frequency_bodygyroscope_std_z" : Standard deviation frequency of body gyroscope measurement for Z direction
-- "frequency_bodyaccelerometermagnitude_mean" : Mean frequency of body acceleration magnitude
-- "frequency_bodyaccelerometermagnitude_std" : Standard deviation of frequency of body acceleration magnitude
-- "frequency_bodyaccelerometerjerkmagnitude_mean" : Mean frequency of body acceleration jerk magnitude
-- "frequency_bodyaccelerometerjerkmagnitude_std" : Standard deviation of frequency of body acceleration jerk magnitude
-- "frequency_bodygyroscopemagnitude_mean" : Mean frequency of magnitude of body gyroscope measurement
-- "frequency_bodygyroscopemagnitude_std" : Standard deviation of frequency of magnitude of body gyroscope measurement
-- "frequency_bodygyroscopejerkmagnitude_mean" : Mean frequency of magnitude of body gyroscope jerk measurement
-- "frequency_bodygyroscopejerkmagnitude_std" : Standard deviation frequency of magnitude of body gyroscope jerk measurement
+- subject : Subject ID
+- activity : Performed activity
+- t_BodyAcc_mean_X : Mean time for acceleration of body for X direction
+- t_BodyAcc_mean_Y : Mean time for acceleration of body for Y direction
+- t_BodyAcc_mean_Z : Mean time for acceleration of body for Z direction
+- t_BodyAcc_std_X : Standard deviation of time for acceleration of body for X direction
+- t_BodyAcc_std_Y : Standard deviation of time for acceleration of body for Y direction
+- t_BodyAcc_std_Z : Standard deviation of time for acceleration of body for Z direction
+- t_GravityAcc_mean_X  :  Mean time of acceleration of gravity for X direction
+- t_GravityAcc_mean_Y : Mean time of acceleration of gravity for Y direction
+- t_GravityAcc_mean_Z : Mean time of acceleration of gravity for Z direction
+- t_GravityAcc_std_X : Standard deviation of time of acceleration of gravity for X direction
+- t_GravityAcc_std_Y : Standard deviation of time of acceleration of gravity for Y direction
+- t_GravityAcc_std_Z : Standard deviation of time of acceleration of gravity for Z direction
+- t_BodyAccJerk_mean_X : Mean time of body acceleration jerk for X direction
+- t_BodyAccJerk_mean_Y : Mean time of body acceleration jerk for Y direction
+- t_BodyAccJerk_mean_Z : Mean time of body acceleration jerk for Z direction
+- t_BodyAccJerk_std_X : Standard deviation of time of body acceleration jerk for X direction
+- t_BodyAccJerk_std_Y  :  Standard deviation of time of body acceleration jerk for Y direction
+- t_BodyAccJerk_std_Z  :  Standard deviation of time of body acceleration jerk for Z direction
+- t_BodyGyro_mean_X  :  Mean body gyroscope measurement for X direction
+- t_BodyGyro_mean_Y  :  Mean body gyroscope measurement for Y direction
+- t_BodyGyro_mean_Z  :  Mean body gyroscope measurement for Z direction
+- t_BodyGyro_std_X  :  Standard deviation of body gyroscope measurement for X direction
+- t_BodyGyro_std_Y  :  Standard deviation of body gyroscope measurement for Y direction
+- t_BodyGyro_std_Z  :  Standard deviation of body gyroscope measurement for Z direction
+- t_BodyGyroJerk_mean_X  :  Mean jerk signal of body for X direction
+- t_BodyGyroJerk_mean_Y  :  Mean jerk signal of body for Y direction
+- t_BodyGyroJerk_mean_Z  :  Mean jerk signal of body for Z direction
+- t_BodyGyroJerk_std_X  :  Standard deviation of jerk signal of body for X direction
+- t_BodyGyroJerk_std_Y  :  Standard deviation of jerk signal of body for Y direction
+- t_BodyGyroJerk_std_Z  :  Standard deviation of jerk signal of body for Z direction
+- t_BodyAccMag_mean  :  Mean magnitude of body acceleration
+- t_BodyAccMag_std  :  Standard deviation of magnitude of body acceleration
+- t_GravityAccMag_mean  :  Mean gravity acceleration magnitude
+- t_GravityAccMag_std  :  Standard deviation of gravity acceleration magnitude
+- t_BodyAccJerkMag_mean  :  Mean magnitude of body acceleration jerk
+- t_BodyAccJerkMag_std  :  Standard deviation of magnitude of body acceleration jerk
+- t_BodyGyroMag_mean  :  Mean magnitude of body gyroscope measurement
+- t_BodyGyroMag_std  :  Standard deviation of magnitude of body gyroscope measurement
+- t_BodyGyroJerkMag_mean  :  Mean magnitude of body gyroscope jerk measurement
+- t_BodyGyroJerkMag_std  :  Standard deviation of magnitude of body gyroscope jerk measurement
+- f_BodyAcc_mean_X : Mean frequency of body acceleration for X direction
+- f_BodyAcc_mean_Y : Mean frequency of body acceleration for Y direction
+- f_BodyAcc_mean_Z : Mean frequency of body acceleration for Z direction
+- f_BodyAcc_std_X : Standard deviation of frequency of body acceleration for X direction
+- f_BodyAcc_std_Y : Standard deviation of frequency of body acceleration for Y direction
+- f_BodyAcc_std_Z : Standard deviation of frequency of body acceleration for Z direction
+- f_BodyAccJerk_mean_X : Mean frequency of body acceleration jerk for X direction
+- f_BodyAccJerk_mean_Y : Mean frequency of body acceleration jerk for Y direction
+- f_BodyAccJerk_mean_Z : Mean frequency of body acceleration jerk for Z direction
+- f_BodyAccJerk_std_X : Standard deviation frequency of body acceleration jerk for X direction
+- f_BodyAccJerk_std_Y : Standard deviation frequency of body acceleration jerk for Y direction
+- f_BodyAccJerk_std_Z : Standard deviation frequency of body acceleration jerk for Z direction
+- f_BodyGyro_mean_X : Mean frequency of body gyroscope measurement for X direction
+- f_BodyGyro_mean_Y : Mean frequency of body gyroscope measurement for Y direction
+- f_BodyGyro_mean_Z : Mean frequency of body gyroscope measurement for Z direction
+- f_BodyGyro_std_X : Standard deviation frequency of body gyroscope measurement for X direction
+- f_BodyGyro_std_Y : Standard deviation frequency of body gyroscope measurement for Y direction
+- f_BodyGyro_std_Z : Standard deviation frequency of body gyroscope measurement for Z direction
+- f_BodyAccMag_mean : Mean frequency of body acceleration magnitude
+- f_BodyAccMag_std : Standard deviation of frequency of body acceleration magnitude
+- f_BodyBodyAccJerkMag_mean : Mean frequency of body acceleration jerk magnitude
+- f_BodyBodyAccJerkMag_std : Standard deviation of frequency of body acceleration jerk magnitude
+- f_BodyBodyGyroMag_mean : Mean frequency of magnitude of body gyroscope measurement
+- f_BodyBodyGyroMag_std : Standard deviation of frequency of magnitude of body gyroscope measurement
+- f_BodyBodyGyroJerkMag_mean : Mean frequency of magnitude of body gyroscope jerk measurement
+- f_BodyBodyGyroJerkMag_std  :  Standard deviation frequency of magnitude of body gyroscope jerk measurement
